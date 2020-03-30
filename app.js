@@ -34,7 +34,7 @@ const item2 = new Item({
 });
 
 const item3 = new Item({
-  name: "Workout"
+  name: "Coding"
 });
 
 const defaultItems = [item1, item2, item3]
@@ -65,7 +65,7 @@ app.get("/", function(req, res) {
     } else {
       //if not empty, shows list of items to do
       res.render("list", {
-        listTitle: customListName,
+        listTitle: "Today",
         newListItems: foundItems
       });
     }
